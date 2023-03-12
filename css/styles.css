@@ -2,3 +2,23 @@ body {
     background-color: #192f5e;
     font-family: sans-serif;
 }
+
+section{
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 1.75rem;
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    margin-bottom: .625rem;
+    padding-bottom: .625rem;
+}
+
+section h2{
+    font-size: 3.125rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
