@@ -3,6 +3,11 @@ body {
     font-family: sans-serif;
 }
 
+.inner-container{
+    max-width: 66.25rem;
+    margin: 0 auto;
+}
+
 section{
     padding: 3.125rem;
     text-align: center;
@@ -21,4 +26,39 @@ section h2{
     font-size: 3.125rem;
     color: #fff;
     margin-bottom: 1.5rem;
+}
+
+.gallery{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    background-color: #87a6ab;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: .3125rem;
+    font-weight: bold;
+    /*poition the span over top of the image and take it out fo the flow of the doc*/
+    position: absolute;
+    /*
+    the top right, bottom and right values position this where ... 
+    in relation to the viewport, UNLESS the parent container is a relativily positioned 
+    container
+    */
+    top: 60px;
+    right: 0;
+}
+
+.thumbnail{
+    position: relative;
+}
+
+@media (min-width: 768px){
+    .gallery{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
